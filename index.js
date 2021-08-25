@@ -10,7 +10,6 @@ function game() {
       haomaru.characterPosition += 5
       character.style.transform = `translateX(${haomaru.characterPosition}px)`;
       haomaru.currentAction = 'moveForWard'
-
     }
     if (haomaru.currentAction === 'moveForWard') {
       character.classList.add('haomaru-move-forward')
@@ -18,6 +17,7 @@ function game() {
   })
   window.addEventListener('keyup', (e) => {
     if (e.keyCode === 68) {
+      haomaru.currentAction = 'standing'
       character.classList.remove('haomaru-move-forward')
       character.classList.add('haomaru-standing')
 
