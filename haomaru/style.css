@@ -1,0 +1,58 @@
+.haomaru-standing {
+    height: 250px;
+    background: url('standing.png');  
+    width: 125px;
+    height: 119px;
+    animation: standing 1s steps(9) infinite;
+    background-repeat: no-repeat;
+    position: absolute;
+}
+
+@keyframes standing {
+    from {
+        background-position: 0px;
+    }
+    to {
+        background-position: -1125px;
+    }
+}
+
+.haomaru-standing::after {
+    content: '';
+    width: 80%;
+    height: 25px;
+    background-color: #111;
+    border-radius: 45%;
+    position: absolute;
+    left: -10px;
+    z-index: -1;
+    bottom: -10px;
+}
+.haomaru-move-forward {
+    height: 250px;
+    background: url('moveForWard.png');  
+    width: calc(953px / 8);
+    height: 119px;
+    animation: move-forward 1s steps(8) infinite;
+    background-repeat: no-repeat;
+    position: absolute;
+}
+.haomaru-move-forward::after {
+    content: '';
+    width: 80%;
+    height: 25px;
+    background-color: #111;
+    border-radius: 45%;
+    position: absolute;
+    left: -10px;
+    z-index: -1;
+    bottom: -10px;
+}
+@keyframes move-forward {
+    from {
+        background-position: 0px;
+    }
+    to {
+        background-position: -953px;
+    }
+}

@@ -1,0 +1,24 @@
+
+.game {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.character {
+    bottom: 30px;
+    left: 10px;
+    position: absolute;
+}
+
+.backgound {
+    position: relative;
+    width: 800px;
+    z-index: 1;
+    height: 600px;
+    background: url('/background1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
